@@ -825,7 +825,7 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
+/*.hero {
   width: 100%;
   min-height: 75vh;
   position: relative;
@@ -834,7 +834,22 @@ section,
   align-items: center;
   background: url("../img/hero-bg.png") top left;
   background-size: cover;
+}*/
+.hero {
+  width: 100%;
+  min-height: 75vh; /* Garante que ocupe parte da tela */
+  position: relative;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("../img/hero-bg.png");
+  background-size: cover;             /* Cobre a área sem distorcer */
+  background-position: center center; /* Centraliza a imagem */
+  background-repeat: no-repeat;
 }
+
 
 .hero:before {
   content: "";
