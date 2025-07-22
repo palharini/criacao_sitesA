@@ -1080,8 +1080,8 @@ section,
   /*--------------------------------------------------------------
 #INICIO CARROSSEL SOBRE NÓS
 ----------------------------------------------------------------*/
-   .carousel-item {
-  height: 60vh;
+.carousel-item {
+  height: 75vh; /* Responsivo, ocupa 75% da altura da viewport */
   min-height: 300px;
   overflow: hidden;
   position: relative;
@@ -1090,20 +1090,23 @@ section,
 .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ocupa todo o espaço sem deformar */
+  transition: opacity 0.8s ease, transform 1.2s ease;
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity 0.8s ease, transform 1.2s ease;
   opacity: 0;
   transform: scale(1);
+  max-width: 100%;
 }
 
+/* Ativa a imagem atual com efeito suave */
 .carousel-item.active img {
   opacity: 1;
-  transform: scale(1.05); /* Zoom leve ao entrar */
+  transform: scale(1.05); /* Leve zoom */
   z-index: 2;
 }
+
 
     .carousel-caption {
       background-color: rgba(0, 0, 0, 0.5);
@@ -1150,15 +1153,19 @@ section,
       border: 3px solid #0d6efd;
       opacity: 1;
     }
+/* ✅ Responsividade para telas pequenas (celulares e tablets) */
 
-    @media (max-width: 768px) {
-      .carousel-caption h5 {
-        font-size: 1.1rem;
-      }
-      .carousel-caption p {
-        font-size: 0.85rem;
-      }
+  /* Em telas pequenas, mantém a altura fixa, mas garante boa exibição */
+  @media (max-width: 768px) {
+    .carousel-item {
+      height: 40vh;
     }
+
+    .carousel-item img {
+      object-fit: cover;
+      transform: none;
+    }
+  }
 
 /*--------------------------------------------------------------
 #FIM CARROSSEL SOBRE NÓS
