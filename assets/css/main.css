@@ -998,6 +998,7 @@ section,
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
+  
 }
 
 .featured-services .service-item h4 a {
@@ -1074,6 +1075,94 @@ section,
 .about .about-content p:last-child {
   margin-bottom: 0;
 }
+
+
+  /*--------------------------------------------------------------
+#INICIO CARROSSEL SOBRE NÓS
+----------------------------------------------------------------*/
+   .carousel-item {
+  height: 60vh;
+  min-height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.8s ease, transform 1.2s ease;
+  opacity: 0;
+  transform: scale(1);
+}
+
+.carousel-item.active img {
+  opacity: 1;
+  transform: scale(1.05); /* Zoom leve ao entrar */
+  z-index: 2;
+}
+
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .thumbnail-carousel-wrapper {
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+
+    .thumbnail-carousel {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: nowrap;
+      min-width: max-content;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    .thumbnail-carousel::-webkit-scrollbar {
+      height: 6px;
+    }
+    .thumbnail-carousel::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+    }
+
+    .thumbnail-carousel img {
+      width: 100px;
+      height: 60px;
+      object-fit: cover;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .thumbnail-carousel img.active {
+      transform: scale(1.05);
+      border: 3px solid #0d6efd;
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-caption h5 {
+        font-size: 1.1rem;
+      }
+      .carousel-caption p {
+        font-size: 0.85rem;
+      }
+    }
+
+/*--------------------------------------------------------------
+#FIM CARROSSEL SOBRE NÓS
+----------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Skills Section
@@ -1964,3 +2053,27 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* botão fixo na direita whatshapp Estilo personalizado */
+
+  .whatsapp-button {
+    position: fixed;
+    bottom: 80px; /* distância do fundo */
+    right: 10px;  /* distância da lateral */
+    width: 50px;
+    height: 50px;
+    background-color: #25D366;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+  }
+
+  .whatsapp-button:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.05);
+    color: white;
+  }

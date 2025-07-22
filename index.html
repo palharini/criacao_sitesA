@@ -16,6 +16,8 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +28,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <!--Bootstrap 5-->
+  
+  
 
   
 </head>
@@ -64,8 +69,10 @@
             <li><a href="#about">Quem Somos</a></li>
             <li><a href="#services">Serviços</a></li>
             <li><a href="#portfolio">Produtos</a></li>
-            <li><a href="#team">Equipe</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li><a href="#">Obituários</a></li><!--Equipe Team-->
+            
+            <li><a href="#contact">Contato</a></li>
+            <li class="dropdown"><a href="#"><span>Crie sua conta</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">Dropdown 1</a></li>
                 <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -82,7 +89,6 @@
                 <li><a href="#">Dropdown 4</a></li>
               </ul>
             </li>
-            <li><a href="#contact">Contato</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -117,59 +123,51 @@
     <section id="featured-services" class="featured-services section">
 
       <div class="container">
-
         <div class="row align-items-stretch gy-4">
-          <div style="text-align: center;"> 
+          <div style="text-align: center; font-weight: bold;"> 
             <h1 class="sitename">Quando chega a hora da despedida, cada detalhe importa!</h1>
           </div>
            
           
-         <!-- Coluna da Imagem (esquerda) -->
-  <div class="col-xl-3 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
-  <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
-  <img src="assets/img/fachada-funeraria.png"
-       class="mx-auto d-block"
-       style="max-width: 100%; height: auto;">
-</div>
-
-</div>
-
-
-  <!-- Coluna do Contato (direita) -->
-  <div class="col-xl-9 col-md-8 col-12 d-flex" data-aos="fade-up" data-aos-delay="200">
-    <div class="service-item w-100 p-4 d-flex flex-column justify-content-center">
-
-      <!-- Título -->
-      <h2 class=" stretched-link text-primary fw-bold mb-4 text-center ">Atendimento 24h</h2>
-
-      <!-- Contatos lado a lado -->
-      <!-- Contatos lado a lado -->
-<div class="d-flex justify-content-center flex-wrap gap-4 mb-4">
-  
-  <!-- Telefone -->
-  <div class="icon d-flex align-items-center gap-2">
-    <i class="bi bi-telephone fs-4 text-dark"></i>
-    <a href="tel:35422180" class="text-decoration-none fs-5 fw-semibold text-dark">3542 - 2180</a> 
-  </div>
-
-  <!-- WhatsApp como botão -->
-  <div class="icon d-flex align-items-center gap-2">
-    <i class="bi bi-whatsapp fs-4 text-success"></i>
-    <a href="https://wa.me/seunumerodetelefone" target="_blank" class="btn btn-success">
-      WhatsApp
-    </a>
-  </div>
-
-</div>
+            <!-- Coluna da Imagem (esquerda) -->
+          <div class="col-xl-3 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+              <img src="assets/img/fachada-funeraria.png"
+                  class="mx-auto d-block"
+                  style="max-width: 100%; height: auto;">
+            </div>
+          </div>
 
 
-      <!-- Texto final -->
-      <p class="fw-semibold text-center mb-0">
-        Entre em contato e fale com um de nossos colaboradores.
-      </p>
+            <!-- Coluna do Contato (direita) -->
+          <div class="col-xl-9 col-md-8 col-12 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item w-100 p-4 d-flex flex-column justify-content-center">
+              <h2 class=" stretched-link text-dark fw-bold mb-4 text-center ">Atendimento 24h</h2>
+                <!--/*text-primary*/-->
+                <!-- Contatos lado a lado -->
+                <!-- Contatos lado a lado -->
+            <div class="d-flex justify-content-center flex-wrap gap-4 mb-4">
+            
+            <!-- Telefone -->
+            <div class="icon d-flex align-items-center gap-2">
+              <i class="bi bi-telephone fs-4 text-dark"></i>
+              <a href="tel:35422180" class="text-decoration-none fs-5 fw-semibold text-dark">3542 - 2180</a> 
+            </div>
 
-    </div>
-  </div>
+            <!-- WhatsApp como botão -->
+            <div class="icon d-flex align-items-center gap-2">
+              <i class="bi bi-whatsapp fs-4 text-success"></i>
+              <a href="https://wa.me/seunumerodetelefone" target="_blank" class="btn btn-success">
+                WhatsApp
+              </a>
+            </div>
+          </div>
+               <!-- Texto final -->
+            <p class="fw-semibold text-center mb-0">
+              Entre em contato e fale com um de nossos colaboradores.
+            </p>
+        </div>
+      </div>
 
 </div>
       
@@ -261,7 +259,7 @@
   
 
     <!-- sessão do parceiros -->
-    <section id="clients" class="clients section light-background">
+   <!-- <section id="clients" class="clients section light-background">
 
       <div class="container">
 
@@ -313,7 +311,55 @@
 
       </div>
 
-    </section><!-- /fim da sessão parceiros -->
+    </section>--><!-- /fim da sessão parceiros -->
+
+
+    <!--CARROSSEL SOBRE NÓS-->
+   
+    <div class="container-fluid p-0">
+      <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/fachada-funeraria.png" class="d-block w-100" alt="Paisagem">
+            <div class="carousel-caption">
+              <h5>Paisagem Natural</h5>
+              <p>Uma vista deslumbrante da natureza.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/hero-bg.png" class="d-block w-100" alt="Cidade">
+            <div class="carousel-caption">
+              <h5>Vida Urbana</h5>
+              <p>A cidade que nunca dorme.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1600x900/?technology" class="d-block w-100" alt="Tecnologia">
+            <div class="carousel-caption">
+              <h5>Inovação</h5>
+              <p>O futuro em suas mãos.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+
+      <div class="thumbnail-carousel-wrapper">
+        <div id="thumbnailCarousel" class="thumbnail-carousel"></div>
+      </div>
+    </div>
+    <!--FIM CARROSSEL SOBRE NÓS-->
+
 
     <!-- Sessão do Serviços -->
     <section id="services" class="services section">
@@ -709,7 +755,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
+                <h4>Todos</h4>
                 <p>Lorem ipsum, dolor sit</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -719,7 +765,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 1</h4>
+                <h4>Urna</h4>
                 <p>Lorem ipsum, dolor sit</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -729,7 +775,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 1</h4>
+                <h4>Ataúde</h4>
                 <p>Lorem ipsum, dolor sit</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -739,7 +785,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 2</h4>
+                <h4>Coroa</h4>
                 <p>Lorem ipsum, dolor sit</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -749,7 +795,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 2</h4>
+                <h4>Coroa</h4>
                 <p>Lorem ipsum, dolor sit</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -759,7 +805,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 2</h4>
+                <h4>Ataúde</h4>
                 <p>Lorem ipsum, dolor sit</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -769,7 +815,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 3</h4>
+                <h4>Coroa</h4>
                 <p>Lorem ipsum, dolor sit</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -779,7 +825,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 3</h4>
+                <h4>Todos</h4>
                 <p>Lorem ipsum, dolor sit</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -789,7 +835,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 3</h4>
+                <h4>Ataúde</h4>
                 <p>Lorem ipsum, dolor sit</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -1148,6 +1194,15 @@
     </div>
 
   </footer>
+<!-- Botão fixo WhatsApp -->
+<a
+  href="https://wa.me/55135422180"
+  class="whatsapp-button d-flex align-items-center justify-content-center"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <i class="bi bi-whatsapp"></i>
+</a>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -1173,6 +1228,12 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Scripts -->
+<!-- Scripts -->
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!--carrossel JS arquivo-->
+<script src="assets/js/carrossel.js"></script>
 
 </body>
 
