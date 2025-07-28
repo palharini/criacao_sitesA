@@ -1,0 +1,133 @@
+/* Seção principal */
+.obituario-section {
+  padding: 70px 0;
+  background: linear-gradient(to bottom, #f8f9fb, #edf0f5);
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+/* Card */
+.card-obituario {
+  width: 280px;
+  margin: 15px;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: center;
+}
+
+.card-obituario:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card-obituario img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-obituario h5 {
+  margin: 16px 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Resultado da busca */
+#search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Formulário */
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.newsletter-form input[type="text"] {
+  flex: 1 1 320px;
+  padding: 12px 18px;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #2c3e50;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.newsletter-form input[type="text"]::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+.newsletter-form input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.15);
+}
+
+/* Botão */
+.newsletter-form input[type="submit"] {
+  padding: 12px 28px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.newsletter-form input[type="submit"]:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 14px rgba(0, 123, 255, 0.2);
+}
+
+.newsletter-form input[type="submit"]:active {
+  background-color: #004999;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletter-form input[type="text"],
+  .newsletter-form input[type="submit"] {
+    width: 100%;
+    flex: unset;
+  }
+
+  #search-results {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .newsletter-form input[type="text"] {
+    flex: 1 1 400px;
+  }
+
+  .newsletter-form input[type="submit"] {
+    flex: 0 0 auto;
+  }
+}
+
+
+
