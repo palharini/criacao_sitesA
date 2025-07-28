@@ -1,6 +1,6 @@
 
   const falecidos = [
-    { nome: "João da Silva", imagem: "img/joao.jpg" },
+    { nome: "João da Silva", imagem: "assets/img/team/team-1.jpg" },
     { nome: "Maria Oliveira", imagem: "img/maria.jpg" },
     { nome: "Carlos Souza", imagem: "img/carlos.jpg" },
     { nome: "Ana Lima", imagem: "img/ana.jpg" }

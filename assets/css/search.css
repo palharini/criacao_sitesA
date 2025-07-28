@@ -5,35 +5,58 @@
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #2c3e50;
 }
-
+.img-fluid{
+  border-radius: 12px 12px 12px 12px;
+}
 /* Card */
 .card-obituario {
-  width: 280px;
-  margin: 15px;
-  border-radius: 14px;
+  width: 100%;
+  max-width: 260px;
+  background: #ffffff;
+  border-radius: 12px;
   overflow: hidden;
-  background-color: #ffffff;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+/* nome dos falecidos nos cards*/
+.member-info h4 {
+  font-family: 'Merriweather', serif; /* Elegante e legível */
+  font-weight: 600;
+  color: #2c2c2c;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  line-height: 1.3;
+  word-wrap: break-word;
+  transition: all 0.3s ease;
 }
 
 .card-obituario:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 .card-obituario img {
   width: 100%;
-  height: 220px;
+  height: 260px;
   object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  transition: filter 0.3s ease;
+  filter: grayscale(10%) contrast(1.05);
+  border-radius: 12px 12px 12px 12px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .card-obituario h5 {
-  margin: 16px 0;
+  margin: 15px 10px;
   font-size: 1.15rem;
   font-weight: 600;
   color: #333;
+  font-family: 'Merriweather', serif;
+  line-height: 1.3;
 }
 
 /* Resultado da busca */
@@ -100,6 +123,26 @@
 }
 
 /* Responsividade */
+/* nome dos falecidos nos cards*/
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .member-info h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .member-info h4 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .member-info h4 {
+    font-size: 1.4rem;
+  }
+}
 
 @media (max-width: 768px) {
   .newsletter-form {
