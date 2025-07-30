@@ -844,7 +844,7 @@ section,
   align-items: center;
   justify-content: center;
 
-  background-image: url("../img/hero-bg.png");
+  background-image: url("../img/hero-bg.JPG");
   background-size: cover;             /* Cobre a área sem distorcer */
   background-position: center center; /* Centraliza a imagem */
   background-repeat: no-repeat;
@@ -883,6 +883,10 @@ section,
   font-weight: 400;
 }
 
+.hero .d-flex {
+  gap: 20px; /* Espaço horizontal entre os botões */
+  flex-wrap: wrap; /* Para quebrar linha no mobile se necessário */
+}
 .hero .btn-get-started, .btn-get-started-tele {
   color: var(--contrast-color);
   background: var(--accent-color);
@@ -899,45 +903,77 @@ section,
 .btn-get-started-tele{
   background-color: #059652;
 }
+.hero .btn-get-started {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 12px 30px;
+  border-radius: 8px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+  min-width: 200px; /* Garante largura mínima para melhor alinhamento */
+}
 
 .hero .btn-get-started:hover {
-  color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  color: var(--contrast-color);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
 }
 
+
+/* Botão do vídeo */
 .hero .btn-watch-video {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 16px;
-  transition: 0.5s;
-  margin-left: 25px;
-  color: var(--default-color);
   font-weight: 600;
+  color: var(--accent-color);
+  background-color: transparent;
+  padding: 12px 20px;
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
 }
+
 
 .hero .btn-watch-video i {
+  font-size: 22px;
   color: var(--accent-color);
-  font-size: 32px;
-  transition: 0.3s;
-  line-height: 0;
-  margin-right: 8px;
+  transition: transform 0.3s ease;
 }
 
 .hero .btn-watch-video:hover {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: #fff;
 }
 
 .hero .btn-watch-video:hover i {
-  color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  color: #fff;
+  transform: scale(1.2);
 }
+
 
 .hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+/* Responsividade para botão */
 @media (max-width: 640px) {
-  .hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+   .hero .btn-get-started {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 0;
+    min-width: unset;
   }
 
   .hero p {
@@ -959,6 +995,30 @@ section,
 
   100% {
     transform: translateY(-10px);
+  }
+}
+
+/* Responsivo: ícone do vídeo na esquerda (em cima do texto se necessário) */
+@media (max-width: 640px) {
+  .hero .d-flex {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .hero .btn-get-started,
+  .hero .btn-watch-video {
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .hero .btn-watch-video {
+    flex-direction: row; /* Ícone à esquerda do texto */
+    justify-content: center;
+  }
+
+  .hero .btn-watch-video i {
+    font-size: 20px;
   }
 }
 
