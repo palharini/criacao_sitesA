@@ -2136,8 +2136,8 @@ section,
 
   .whatsapp-button {
     position: fixed;
-    bottom: 80px; /* distância do fundo */
-    left: 10px;  /* distância da lateral */
+    bottom: 200px; /* distância do fundo */
+    left: 15px;  /* distância da lateral */
     width: 50px;
     height: 50px;
     background-color: #25D366;
@@ -2216,4 +2216,23 @@ section,
 
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
+}
+/*-------Botão personalizado de voltar a página anterior---------*/
+.btn-back-to-top {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.8);
+  color: #0d6efd;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+.btn-back-to-top:hover {
+  background: #0d6efd;
+  color: #fff;
 }
